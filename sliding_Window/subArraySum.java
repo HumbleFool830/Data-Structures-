@@ -12,10 +12,11 @@ public class subArraySum {
         }
         System.out.println("enter the how many elements to add in a array");
         int k = sc.nextInt();
-        System.out.println(subArraySum(arr,k));
+        sc.close();
+        System.out.println(SubArraySum(arr,k));
 
     }
-    public static List<Integer> subArraySum(int arr[] , int k)
+    public static List<Integer> SubArraySum(int arr[] , int k)
     {
         List<Integer> res = new ArrayList<>();
         int st = 0;
