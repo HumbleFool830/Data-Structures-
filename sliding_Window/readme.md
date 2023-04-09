@@ -14,6 +14,6 @@ let us take one example like sum of subarray of k elements in an given array.
 
 ## plzz try with your own solution other wise see this it includes brute force and sliding window technique approaches.
 
- [ solution ] (https://github.com/HumbleFool830/Data-Structures-and-Algorithms/blob/main/sliding_Window/subArraySum.java) 
+ [ solution ](https://github.com/HumbleFool830/Data-Structures-and-Algorithms/blob/main/sliding_Window/subArraySum.java) 
 
  
