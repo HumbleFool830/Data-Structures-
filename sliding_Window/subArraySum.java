@@ -13,9 +13,34 @@ public class subArraySum {
         System.out.println("enter the how many elements to add in a array");
         int k = sc.nextInt();
         sc.close();
+        System.out.println(sumOfSubArray(arr, k));
         System.out.println(SubArraySum(arr,k));
 
     }
+
+    //Brute force Approach.
+
+    public static List<Integer> sumOfSubArray(int arr[] , int k)
+    {
+        List<Integer> sumofsubArray = new ArrayList<>();
+        for(int i=0;i<arr.length && (arr.length-i>=k);i++)
+        {
+            int sum =0;
+            for(int j=i;j<k+i;j++){
+                sum+=arr[j];
+            }
+            sumofsubArray.add(sum);
+        }
+        /*  In this approach we are touching every eleme twice accept first and form last k-1 elements
+        touching only once.
+
+        Time complexity : o(n*(n-k)) but it also similar to o(n^2)
+        space complexity : O(n-k) it almost similar to O(n)
+        */
+        return sumofsubArray;
+    }
+
+    //Sliding window Technique.
     public static List<Integer> SubArraySum(int arr[] , int k)
     {
         List<Integer> res = new ArrayList<>();
@@ -39,7 +64,9 @@ public class subArraySum {
             }
 
         }
-
+/*
+ * In this sliding technique Time complexity is similar to o(n) and space complexity is o(n);
+ */
         return res;
     }
 }
